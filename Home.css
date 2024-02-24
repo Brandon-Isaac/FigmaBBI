@@ -236,10 +236,16 @@
   font-stretch: normal;
   text-decoration: none;
 }
-
+.contact-details{
+    top: 1200px;
+    left:76vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
 .home-footer {
   top: 1289px;
-  left: 1pxpx;
+  left: 1px;
   width: 100%;
   display: flex;
   position: absolute;
@@ -269,7 +275,7 @@
   color: rgba(255, 255, 255, 1);
   width: 328px;
   height: auto;
-  font-size: 14px;
+  font-size: 20px;
   font-style: italic;
   text-align: left;
   font-family: Inter;
