@@ -20,19 +20,40 @@
 
 .header {
   width: 100%;
-  height: 20vh;
+  height: 26vh;
   background-color: #230c53;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.header1{
+  width: 100%;
+  height: 26vh;
+  background-color: #230c53;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .logo {
-  top: 2px;
-  left: -10px;
-  width: 20%;
-  height: 10%;
+ position: relative;
   object-fit: contain;
-  position: absolute;
 }
-
+.nav{
+  position: relative;
+  display:flex;
+  margin: 6px;
+  align-items: center;
+}
+.navigation{
+  color: rgb(242, 250, 0);
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.navigation:hover{
+  text-decoration: underline;
+}
 .home-left-panel {
   gap: 79px;
   top: 25vh;
@@ -71,16 +92,12 @@
 
 .home-text02 {
   color: rgba(0, 0, 0, 1);
-  width: 466px;
-  height: auto;
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
   text-align: left;
   font-family: Send Flowers;
   font-weight: 400;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .home-text04 {
@@ -98,7 +115,7 @@
 }
 
 .home-text06 {
-  color: rgba(0, 0, 0, 1);
+  color:beige;
   width: 202px;
   height: auto;
   font-size: 14px;
@@ -111,31 +128,16 @@
   text-decoration: none;
 }
 
-.home-linkedin {
+.icons{
   width: 62px;
   height: 62px;
+  margin-right: 5px;
+}
+.icons:hover{
+  filter: brightness(1.5);
+  cursor: pointer;
 }
 
-.home-instagram {
-  width: 61px;
-  height: 64px;
-}
-
-.home-facebook {
-  width: 61px;
-  height: 55px;
-}
-
-.home-visitusnowtrue {
-  top: 1053px;
-  left: 82px;
-  width: 239px;
-  display: flex;
-  padding: 3px 0;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-}
 
 .home-signup {
   gap: 16px;
@@ -151,7 +153,7 @@
 }
 
 .graduates {
-  top: 0;
+  top: 11px;
   left: 2px;
   height: 10%;
   position: absolute;
@@ -186,55 +188,32 @@
   height: 20px;
 }
 
-.home-text13 {
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  font-size: 14px;
-  font-style: SemiBold;
-  text-align: left;
-  font-family: Montserrat;
-  font-weight: 600;
-  line-height: 100%;
-  font-stretch: normal;
-  text-decoration: none;
-}
 
 .home-login,
 .home-signup1 {
+  color: beige;
+  font-weight: bolder;
   gap: 12px;
   width: 35px;
   position: relative;
   display: flex;
-  padding: 23px 32px;
+  width: 150px;
+  border: none;
+  height: 40px;
   margin: 20px;
-  box-shadow: 0px 3px 8px 0px rgba(136, 144, 194, 0.25);
   align-items: center;
   flex-shrink: 0;
-  border-radius: 50px;
+  border-radius: 60px;
   justify-content: center;
   background-color: rgba(0, 100, 177, 1);
   transition: 0.5 ease-in;
 }
 
-.home-signup1 :hover,
-.home-login :hover {
-  font-size: large;
-  color: aliceblue;
+.home-signup1:hover,
+.home-login:hover {
+  color: #070505;
   cursor: pointer;
-}
-
-.home-text15 {
-  color: rgba(255, 255, 255, 1);
-  width: 59px;
-  height: auto;
-  font-size: 14px;
-  font-style: SemiBold;
-  text-align: left;
-  font-family: Montserrat;
-  font-weight: 600;
-  line-height: 100%;
-  font-stretch: normal;
-  text-decoration: none;
+  background-color: rgb(105, 188, 230);
 }
 .contact-details{
     top: 1200px;
@@ -242,6 +221,29 @@
     position: absolute;
     display: flex;
     flex-direction: row;
+}
+.features{
+  background-color: #230c53;
+  margin-bottom: 9px;
+  color:beige;
+  top: 750px;
+  width: 100%;
+  position: absolute;
+  font-size: 19px;
+  
+}
+.features ul span{
+  font-weight: bold;
+  font-size: 20;
+  cursor: pointer;
+}
+.link{
+  color: rgb(245, 241, 133);
+  font-size: 30px;
+  transition: 0.5s;
+}
+.link:hover{
+  color:aqua;
 }
 .home-footer {
   top: 1289px;
@@ -258,7 +260,7 @@
 }
 
 .home-text17 {
-  color: rgba(255, 255, 255, 1);
+  color: beige;
   width: 279px;
   height: auto;
   font-size: 24px;
@@ -272,7 +274,7 @@
 }
 
 .home-text22 {
-  color: rgba(255, 255, 255, 1);
+  color: beige;
   width: 328px;
   height: auto;
   font-size: 20px;
@@ -286,7 +288,7 @@
 }
 
 .home-text24 {
-  color: rgba(255, 255, 255, 1);
+  color: beige;
   width: 329px;
   height: auto;
   font-size: 24px;
@@ -299,22 +301,150 @@
   text-decoration: none;
 }
 
-.home-text25 {
-  font-weight: 400;
+.contacts{
+  padding-right: 30px;
+}
+.form {
+  left: 50%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  min-width: 300px;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto;
+  position: absolute;
+  transform: translate(-50%,10%);
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
 }
 
-.home-text29 {
-  font-weight: 300;
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #00bfff;
 }
 
-.home-text33 {
-  font-weight: 400;
+.title::before {
+  width: 18px;
+  height: 18px;
 }
 
-.home-text34 {
-  font-weight: 300;
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
 }
 
-.home-text38 {
-  font-weight: 400;
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #00bfff;
+}
+
+.message, 
+.signin {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }
