@@ -437,7 +437,8 @@
   position: relative;
 }
 
-.form label .input {
+.form label .input,
+select {
   background-color: #333;
   color: #fff;
   width: 100%;

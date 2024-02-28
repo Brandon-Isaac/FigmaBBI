@@ -1,4 +1,4 @@
-//create a serrver-side script called "submit.php"
+//create a server-side script called "submit.php"
 //the validation rules still not working, hope it will work when done with the backend
 
 function validateForm() {
@@ -50,3 +50,18 @@ function validateForm() {
 else
 alert("Invalid Form Details");
   }
+  function submitForm() {
+    var formData = new FormData(document.getElementById("loginForm"));
+
+    fetch("login.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert(data); // Display the response from the server
+    })
+    .catch(error => {
+        console.error("There was a problem with the form submission:", error.message);
+    });
+}
