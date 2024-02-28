@@ -3,86 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./home.css" rel="stylesheet" />
     <title>Building Bridges Initiative</title>
   </head>
   <body>
     <div class="body">
-      <link href="./home.css" rel="stylesheet" />
       <div class="home-container">
-        <div class="home-homepage">
+        <div class="home-homepage1">
           <div class="header1">
             <img src="/Images/Logo1.png" alt="logo" class="logo" />
             <div class="nav">
-                <a href="" class="navigation">Academics</a>
-                <a href="" class="navigation">Application</a>
-                <a href="" class="navigation">Mentors</a>
-                <a href="" class="navigation">Progress</a>
-                <a href="" class="navigation">Skills</a>
+              <a href="#student-details" class="navigation">Details</a>
+              <a href="#Academics" class="navigation">Academics</a>
+              <a href="" class="navigation">Application</a>
+              <a href="" class="navigation">Mentors</a>
+              <a href="" class="navigation">Progress</a>
+              <a href="" class="navigation">Skills</a>
+            </div>
+          </div>
+
+          <div class="container">
+            <div id="student-details">
+            <img src="/Images/user.png" alt="Student icon" class="logo1" />
+            <br />
+            <span> STUDENT DETAILS </span>
+            <hr />
+            <label for="Username"></label><span id="Username">Username</span></label> <br><br>
+            <label for="Email address"><span id="email">Email Address</span></label> <br /><br>
+            <label for="Education Level"><span >Education Level</span></label> <br><br>
+            <label for="Course"></label><span>Course</span><br><br>
+            <label for="Career"></label><span>Career</span><br>
+          </div><hr>
+
+
+
+          <div id="applications">
+          <span>Course applied</span>
+          <ul>
+            <li>Course 1</li>
+            <li>Course 2</li>
+            <li>Course 3</li>
+            <li>Course 4</li>
+          </ul>
+          <div id="course-status">
+            
+          </div>
+
+          </div>
+            <div id="Academics">
+              <span>ACADEMIC QUALIFICATIONS</span><hr>
+              <div class="qualifications">
+
+              
+         <!--
+          Here we have to place some code that makes the cose dynamically functional.
+          when the form of the student is filled , the student should be able to see his/her details
+          It may involve just a lil bit of JavaScript.There is either Passed, Skipped or Fail
+         -->
+              <ul>
+                <li><span>Primary Education:</span>Passed, Skipped or Fail</li><br>
+                <li><span>Secondary Education: </span>Passed</li><br>
+                <li><span>University Education:  </span>Passed</li><br>
+              </ul>
               
             </div>
-          </div>
+            </div><hr>
+            <div id="skills">
+              <span>
+                SKILLS
+              </span><hr>
+<div class="skills">
 
-          <div class="home-left-panel">
-            <div class="home-welcoming">
-              <span class="home-text">
-                <span>Building Bridges Initiative</span>
-              </span>
-              <span class="home-text02">A roadmap to your dreams</span>
-              <span class="home-text04">
-                A platform that offers you the chance to meet your dreams by the
-                help of your mentors through a well laid out plan and program
-                that meets your needs as best as you would like it.
-              </span>
-            </div>
+  <div class="skills-container">
+<img src="/Images/Logo1.png" alt="Programming" class="skill">
+<span>Programming</span>
+  </div>
+  <div class="skills-container">
+    <img src="/Images/Logo1.png" alt="Programming" class="skill">
+    <span>Programming</span>
+      </div>
+      <div class="skills-container">
+        <img src="/Images/Logo1.png" alt="Programming" class="skill">
+        <span>Programming</span>
           </div>
+          <div class="skills-container">
+            <img src="/Images/Logo1.png" alt="Programming" class="skill">
+            <span>Programming</span>
+              </div>
+</div>
+<br><br><br>
+<hr>
+<div class="application">
+  <span>
+    JOBS APPLIED
+  </span>
+  <div id="jobs-applied">
+    <!--The status of the job applied can be Learning, Pending or Approved,, This is upto the Company but by Default it should be Pending, The Company is to detrermine whether you have to learn some additional skills or Approve-->
+    <ul>
+      <li>Job 1</li><span id=status>Pending</span>
+      <li>Job 2</li><span id=status>Pending</span>
+      <li>Job 3</li><span id=status>Pending</span>
+      <li>Job 4</li><span id=status>Pending</span>
+      <li>Job 5</li><span id=status>Pending</span>
+    </ul>
+  </div>
+</div>
+<br><br><br><hr>
 
-          <div class="home-signup">
-            <img src="/Images/studentLogo" alt="Student icon" class="logo1">
-            <span class="home-text11">
-              DONT MISS YOUR CHANCE TO BE GREAT, JOIN US NOW!
-            </span>
-            <div class="signup-login">
-              <button class="home-signup1" href="">Signup</button>
-              <button class="home-login" href="">Login</button>
+
             </div>
+
+
           </div>
         </div>
-        <section class="features">
-          <div class="container">
-            <h2><u>Key Features</u></h2><br>
-              <ul>
-                  <li><span>Personalized Mentorship:</span> Connect with seasoned professionals for tailored guidance and insights.</li><br>
-                  <li><span>Comprehensive Job Market Platform:</span> Explore job opportunities, showcase your skills, and network with industry professionals.</li><br>
-                  <li><span>Industry Engagement: </span>Gain valuable insights directly from companies through presentations, job vacancies, and specific requirements.</li><br>
-                  <li><span>Flexible Learning: </span>Choose tasks aligned with your career aspirations, shaping your learning experience based on personal preferences and timelines.</li><br>
-                  <li><span>Continuous User Support:</span> Access helpdesk services, online tutorials, and community forums for ongoing assistance.</li><br>
-                  <li><span>Data Privacy and Security:</span> Ensuring the confidentiality and integrity of user data through robust security measures and compliance with data protection regulations.</li><br>
-                  <li><span>Collaborative Projects:</span> Engage in collaborative projects with peers and industry partners to apply theoretical knowledge in real-world scenarios and build practical experience.</li><br>
-                  <li><span>Resource Library:</span> Access a comprehensive library of resources, including articles, case studies, and learning materials, to support continuous learning and skill development.</li><br>
-                  <a href=""class="link" >Register with us!</a>
-              </ul>
-          </div>
-          </div>
-        </section>
-
-        
-        <div class="home-footer">
-          <div class="socials">
-            <span class="home-text06">Follow us:  @bbinitiative.</span>
-            <br>
-            <img src="twitter" alt="Twitter" class="icons" href="" title="@bbinitiative"> 
-            <img src="linkedin" alt="linkedin513" class="icons" href="" />
-            <img src="instagram" alt="instagram512" class="icons" href="" />
-          </div>
-          <span class="home-text22"> &copy; Building Bridges Initiative</span>
-          <div class="contacts">
-            <span class="home-text24">
-              Contact us on:
-            </span> <br>
-             <img src="email" alt="Email" class="icons" href="" title="buildingbridges@gmail.com">                
-          <img src="phone" alt="Call" class="icons" href="" title="0793000920">
-          </div>
-          
-        </div>
+       
+      </div>
+    </div>
   </body>
 </html>
