@@ -1,4 +1,6 @@
 //create a serrver-side script called "submit.php"
+//the validation rules still not working, hope it will work when done with the backend
+
 function validateForm() {
     var firstName = document.getElementById("firstname").value;
     var lastName = document.getElementById("lastname").value;
