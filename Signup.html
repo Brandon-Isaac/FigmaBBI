@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="App.js"></script>
+    <script src="App.js" defer></script>
   </head>
   <body>
     <div class="home-homepage">
-      <form class="form">
+      <form class="form" id="formData">
         <div class="header">
           <img src="/Images/Logo1.png" alt="logo" class="logo" />
         </div>
@@ -18,31 +18,63 @@
 
         <div class="flex">
           <label>
-            <input class="input" type="text" placeholder="" required="" />
+            <input
+              class="input"
+              type="text"
+              placeholder=""
+              required=""
+              id="firstname"
+            />
             <span>Firstname</span>
           </label>
 
           <label>
-            <input class="input" type="text" placeholder="" required="" />
+            <input
+              class="input"
+              type="text"
+              placeholder=""
+              required=""
+              id="lastname"
+            />
             <span>Lastname</span>
           </label>
         </div>
 
         <label>
-          <input class="input" type="email" placeholder="" required="" />
+          <input
+            class="input"
+            type="email"
+            placeholder=""
+            required=""
+            id="email"
+          />
           <span>Email</span>
         </label>
 
         <label>
-          <input class="input" type="password" placeholder="" required="" />
+          <input
+            class="input"
+            type="password"
+            placeholder=""
+            required=""
+            id="password"
+          />
           <span>Password</span>
         </label>
         <label>
-          <input class="input" type="password" placeholder="" required="" />
+          <input
+            class="input"
+            type="password"
+            placeholder=""
+            required=""
+            id="confirmPassword"
+          />
           <span>Confirm password</span>
         </label>
         <button class="submit">Submit</button>
-        <p class="signin">Already have an acount ? <a href="#">Signin</a></p>
+        <p class="signin">
+          Already have an acount ? <a href="/login.html">Signin</a>
+        </p>
       </form>
     </div>
   </body>
